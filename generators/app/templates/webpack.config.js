@@ -13,6 +13,10 @@ if (!fs.existsSync(root)) {
 }
 
 if (!fs.existsSync(root)) {
+  root = path.resolve(__dirname, 'vendor/htmlburger/carbon-fields');
+}
+
+if (!fs.existsSync(root)) {
     console.error('Could not find Carbon Fields folder.');
     process.exit(1);
     return;
