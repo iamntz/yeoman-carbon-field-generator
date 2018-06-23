@@ -60,7 +60,8 @@ module.exports = class extends Generator {
         FIELD_NAME_CLASS_PHP: field_name_class_php,
         FIELD_NAME_PHP_PATH: s.underscored(this.props.project_name).toUpperCase() + '_DIR',
         FIELD_NAME_COMPOSER: this.props.composer.replace('\\', '/'),
-        FIELD_DESCRIPTION: s.clean(this.props.project_description)
+        FIELD_DESCRIPTION: s.clean(this.props.project_description),
+        FIELD_NAME_SAMPLE: s.classify(field_name_php_camel_case).toLowerCase(),
       }
     );
 

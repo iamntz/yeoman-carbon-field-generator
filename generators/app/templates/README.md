@@ -7,3 +7,9 @@ Adds a `<%= FIELD_NAME_JS %>` field type to Carbon Fields. Install using Compose
 ```cli
 composer require <%= FIELD_NAME_COMPOSER %>
 ```
+
+Usage:
+
+```php
+Field::make('<%= FIELD_NAME_SAMPLE %>', ....)
+```
