@@ -1,0 +1,16 @@
+{
+  "name": "generator-carbon-field",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "gulp-rename": "1.2.2",
+    "underscore.string": "^3.3.4",
+    "yeoman-generator": "^2.0.5"
+  }
+}

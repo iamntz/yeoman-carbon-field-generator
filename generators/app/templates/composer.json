@@ -1,0 +1,19 @@
+{
+    "name": "<%= FIELD_NAME_COMPOSER %>",
+    "description": "<%= FIELD_DESCRIPTION %>",
+    "keywords": ["wordpress", "carbon-field"],
+    "homepage": "https://github.com/<%= FIELD_NAME_COMPOSER %>",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "require": {
+        "htmlburger/carbon-fields": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "<%= FIELD_NAMESPACE.replace(/\\/g, '\\\\') %>\\": "src/"
+        }
+    }
+}
