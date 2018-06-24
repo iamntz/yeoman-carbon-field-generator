@@ -55,10 +55,10 @@ module.exports = class extends Generator {
       this.destinationPath('.'), {
         FIELD_NAMESPACE: this.props.project_namespace.replace(/(\/)/g, '\\'),
         FIELD_NAME: s.dasherize(this.props.project_name),
-        FIELD_NAME_JS: s.dasherize(this.props.project_name),
+        FIELD_NAME_JS: s.classify(this.props.project_name).toLowerCase(),
         FIELD_NAME_PHP: field_name_php_camel_case,
         FIELD_NAME_CLASS_PHP: field_name_class_php,
-        FIELD_NAME_PHP_PATH: s.underscored(this.props.project_name).toUpperCase() + '_DIR',
+        FIELD_NAME_PHP_PATH: 'CARBON_' + s.underscored(this.props.project_name).toUpperCase() + '_DIR',
         FIELD_NAME_COMPOSER: this.props.composer.replace('\\', '/'),
         FIELD_DESCRIPTION: s.clean(this.props.project_description),
         FIELD_NAME_SAMPLE: s.classify(field_name_php_camel_case).toLowerCase(),
