@@ -1,7 +1,7 @@
 ### What's this?
 A small utility package to quickly generate a custom carbon field component for Yeoman.
 
-Is taking care of generating PHP files, JS files as well as proper file names.
+It's taking care of generating PHP files, JS files as well as proper file names.
 
 ### How to install it:
 
