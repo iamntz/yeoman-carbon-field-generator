@@ -13,7 +13,7 @@ import withStore from 'fields/decorators/with-store';
 import withSetup from 'fields/decorators/with-setup';
 
 /**
- * Render a number input field.
+ * Render a <%= FIELD_NAME_JS %> input field.
  *
  * @param  {Object}        props
  * @param  {String}        props.name
@@ -75,6 +75,6 @@ export const enhance = compose(
 );
 
 export default setStatic('type', [
-	'number',
+	'<%= FIELD_NAME_JS %>',
 ])(enhance(<%= FIELD_NAME_JS %>));
 
